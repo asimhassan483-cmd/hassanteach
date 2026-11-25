@@ -3,50 +3,251 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HassanTech</title>
+
+<title>HassanTech | Technology & Innovation</title>
+
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#071426;color:white}
-header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;background:#0d2038}
-.logo{font-size:27px;font-weight:bold;color:#38bdf8}
-nav a{color:white;text-decoration:none;margin-left:20px}
-.hero{text-align:center;padding:110px 20px;background:linear-gradient(135deg,#0b2447,#075985)}
-.hero h1{font-size:48px;margin:0 0 20px}
-.hero p{font-size:19px;color:#dbeafe}
-.btn{display:inline-block;background:#38bdf8;color:#071426;padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:bold;margin-top:20px}
-section{text-align:center;padding:65px 20px}
-.cards{display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
-.card{background:#132b46;padding:30px;border-radius:15px;width:260px}
-.card h3{color:#38bdf8}
-footer{background:#0d2038;text-align:center;padding:25px;color:#cbd5e1}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #071426;
+  color: white;
+}
+
+header {
+  background: #0b1f38;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #0b1f38, #075985);
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero span {
+  color: #38bdf8;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #0284c7;
+  color: white;
+  padding: 14px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 15px;
+  color: #38bdf8;
+}
+
+.intro {
+  color: #cbd5e1;
+  margin-bottom: 35px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: #132b46;
+  padding: 30px;
+  border-radius: 15px;
+  width: 250px;
+  border: 1px solid #244663;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #38bdf8;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #7dd3fc;
+}
+
+.card p {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.about {
+  background: #0b1f38;
+}
+
+.contact a {
+  color: #38bdf8;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #020b16;
+  color: #94a3b8;
+}
 </style>
 </head>
+
 <body>
+
 <header>
-<div class="logo">HassanTech 🚀</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#services">Services</a>
-</nav>
+  <div class="logo">HassanTech 🚀</div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#technology">Technology</a>
+    <a href="#learning">Learning</a>
+    <a href="#business">Business</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
+
 <div class="hero" id="home">
-<h1>Welcome to HassanTech</h1>
-<p>Your World of Technology</p>
-<a class="btn" href="#services">Explore More</a>
+  <h1>Welcome to <span>HassanTech</span></h1>
+
+  <p>Your World of Technology, Innovation and Digital Skills.</p>
+
+  <a href="#technology" class="btn">Explore Technology</a>
 </div>
-<section id="about">
-<h2>About HassanTech</h2>
-<p>We explore the future of technology and innovation.</p>
+
+<section id="technology">
+  <h2>Technology & Innovation</h2>
+  <p class="intro">Discover the future of technology.</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>💻 Web Development</h3>
+      <p>Learn HTML, CSS, JavaScript and build modern websites.</p>
+    </div>
+
+    <div class="card">
+      <h3>🤖 Artificial Intelligence</h3>
+      <p>Explore AI tools, machine learning and smart technology.</p>
+    </div>
+
+    <div class="card">
+      <h3>📱 Digital Technology</h3>
+      <p>Discover computers, mobile technology and digital innovation.</p>
+    </div>
+
+  </div>
 </section>
-<section id="services">
-<h2>Our Services</h2>
-<div class="cards">
-<div class="card"><h3>💻 Web Design</h3><p>Beautiful modern websites.</p></div>
-<div class="card"><h3>🚀 Technology</h3><p>Explore the latest technology.</p></div>
-<div class="card"><h3>🌐 SEO</h3><p>Learn about website growth.</p></div>
-</div>
+
+<section id="learning" class="about">
+  <h2>HassanTech Learning</h2>
+  <p class="intro">Start learning today and build your future.</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Computer Skills</h3>
+      <p>Learn computer basics, typing, files and software.</p>
+    </div>
+
+    <div class="card">
+      <h3>Programming</h3>
+      <p>Start coding and create your own digital projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>Online Skills</h3>
+      <p>Explore freelancing, digital work and online opportunities.</p>
+    </div>
+
+  </div>
 </section>
-<footer>© 2026 HassanTech | Made with ❤️ by Hassan</footer>
+
+<section id="business">
+  <h2>Business & Leadership</h2>
+  <p class="intro">Develop the mindset to build and lead a successful business.</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>CEO Skills</h3>
+      <p>Learn leadership, decision-making and business strategy.</p>
+    </div>
+
+    <div class="card">
+      <h3>Entrepreneurship</h3>
+      <p>Turn your ideas into projects and future businesses.</p>
+    </div>
+
+    <div class="card">
+      <h3>Future Vision</h3>
+      <p>Think big, solve problems and create new opportunities.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="about contact">
+  <h2>Contact HassanTech</h2>
+  <p class="intro">Have an idea? Let's build something amazing.</p>
+
+  <a href="mailto:hello@hassantech.com" class="btn">
+    Contact Us
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 HassanTech. All Rights Reserved.</p>
+  <p>Technology • Learning • Innovation</p>
+</footer>
+
 </body>
 </html>

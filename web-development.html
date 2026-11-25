@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Development | HassanTech</title>
+
+<style>
+body {
+  background: #071426;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 30px;
+  background: #0b1f38;
+  border-radius: 15px;
+}
+
+h1, h2 {
+  color: #38bdf8;
+}
+
+.lesson {
+  background: #132b46;
+  padding: 25px;
+  margin: 25px 0;
+  border-radius: 15px;
+}
+
+pre {
+  background: #020b16;
+  padding: 15px;
+  border-radius: 10px;
+  overflow-x: auto;
+  color: #7dd3fc;
+}
+
+button {
+  background: #0284c7;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+a {
+  color: #38bdf8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Web Development</h1>
+  <p>Learn to Build Your Own Websites</p>
+  <a href="index.html">← Back to HassanTech</a>
+</header>
+
+<div class="lesson">
+  <h2>Lesson 1: What is HTML?</h2>
+
+  <p>HTML is used to create the structure of a website.</p>
+
+  <p>HTML stands for HyperText Markup Language.</p>
+
+  <h3>Example HTML Code:</h3>
+
+  <pre>
+&lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;p&gt;I am learning HTML.&lt;/p&gt;
+  </pre>
+
+  <p>The h1 tag creates a heading.</p>
+  <p>The p tag creates a paragraph.</p>
+</div>
+
+<div class="lesson">
+  <h2>Lesson 2: Create a Button</h2>
+
+  <pre>
+&lt;button&gt;Click Me&lt;/button&gt;
+  </pre>
+
+  <p>This code creates a button on your webpage.</p>
+
+  <button onclick="alert('Welcome to HassanTech!')">
+    Try This Button
+  </button>
+</div>
+
+<div class="lesson">
+  <h2>Lesson 3: Your First Practice</h2>
+
+  <p>Try changing the text below and press the button.</p>
+
+  <input id="name" placeholder="Enter your name">
+
+  <button onclick="showName()">Show My Name</button>
+
+  <h3 id="result"></h3>
+</div>
+
+<script>
+function showName() {
+  let name = document.getElementById("name").value;
+
+  document.getElementById("result").innerText =
+    "Welcome to HassanTech, " + name + "!";
+}
+</script>
+
+</body>
+</html>
